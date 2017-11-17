@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>凑单品</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="lib/mui/css/mui.css">
+    <link rel="stylesheet" href="lib/fa/css/font-awesome.css">
+    <link rel="stylesheet" href="lib/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/gsproduct.css">
+</head>
+<body>
+<div class="container">
+    <div class="head mui-clearfix">
+        <div class="head-left">
+            <a href="javascript:history.go(-1);">
+
+            </a>
+        </div>
+        <h3>凑单品</h3>
+        <div class="head-right">
+            <img src="images/header_app.png" alt="">
+        </div>
+    </div>
+
+    <div class="nav-areas">
+        <ul class="mui-clearfix">
+            <li class="first-area">
+                京东
+            </li>
+            <li class="second-area">
+                华北
+            </li>
+            <li class="price">
+                全部价格
+            </li>
+        </ul>
+        <div class="search">
+
+        </div>
+    </div>
+
+    <div class="nav-areas-lis">
+        <div class="areas-lis1" id="li1">
+            <ul>
+
+            </ul>
+        </div>
+        <div class="areas-lis2" id="li2">
+            <ul>
+
+            </ul>
+        </div>
+        <div class="areas-lis3" id="li3">
+            <ul>
+                <li>全部价格</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="gs-product">
+            <ul class="mui-clearfix">
+
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-top">
+            <a href="login.html">登录</a>
+            <a href="register.html">注册</a>
+            <a href="javascript:;" class="back">
+                <img src="http://www.zuyushop.com/wap/images/top.jpg" alt="" width="15" height="15">
+                返回顶部
+            </a>
+        </div>
+        <div class="footer-bottom">
+            <p>
+                <a href="javascript:;">手机APP下载</a>
+                <a href="index.html">慢慢买手机版</a>
+                --掌上比价平台
+            </p>
+            <p>m.manmanbuy.com</p>
+        </div>
+    </div>
+</div>
+
+<script type="text/html" id="tpl">
+    {{each result v i}}
+    <li data-shopid="{{v.shopId}}">{{v.shopName}}</li>
+    {{/each}}
+</script>
+
+<script type="text/html" id="tpl1">
+    {{each result v i}}
+    <li data-areaid="{{v.areaId}}">{{v.areaName}}</li>
+    {{/each}}
+</script>
+
+<script type="text/html" id="tpl2">
+    {{each result v i}}
+    <li>
+        <a href="javascript:;">
+            <div class="pic">
+                <img src="{{v.productImg}}" alt="">
+            </div>
+            <p class="mui-ellipsis">{{v.productName}}</p>
+            <div class="price mui-clearfix">
+                <span>{{v.productPrice}}</span>
+                <a href="javascript:;" class="price-right">去凑单</a>
+            </div>
+        </a>
+    </li>
+    {{/each}}
+</script>
+
+
+
+
+<script src="lib/zepto/zepto.min.js"></script>
+<script src="lib/mui/js/mui.js"></script>
+<script src="lib/artTemplate/template-web.js"></script>
+<script src="lib/swiper/js/swiper.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/gsproduct.js"></script>
+</body>
+</html>

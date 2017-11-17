@@ -1,0 +1,43 @@
+.content li {
+  float: left;
+  width: 50%;
+  border: 1px solid #eeeeee;
+  background-color: #fff;
+  padding: 10px 0 0 10px;
+}
+.content li a {
+  display: block;
+}
+.content li a .pic {
+  margin: 0 auto;
+  text-align: center;
+}
+.content li a .pic img {
+  width: 140px;
+  height: 140px;
+}
+.content li a .title {
+  color: #333333;
+  font-size: 14px;
+  text-align: left;
+  font-weight: bold;
+  margin-top: 4px;
+  height: 36px;
+  width: 100%;
+}
+.content li a .price {
+  color: #ff6c00;
+  margin-top: 10px;
+  font-size: 14px;
+  text-align: left;
+  height: 18px;
+  line-height: 18px;
+}
+.content li a .mall {
+  margin-top: 4px;
+}
+.content li a .mall p {
+  color: #a1a1a1;
+  font-size: 12px;
+  text-align: left;
+}

@@ -1,0 +1,136 @@
+*{
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a{
+  color: #000000;
+}
+
+.container{
+  background-color:#ffffff;
+  max-width: 750px;
+  min-width: 320px;
+  margin: 0 auto;
+
+  .head{
+    height: 50px;
+    line-height: 50px;
+    background: #ff841d;
+    border-bottom: 1px solid #e6e6e6;
+    position: relative;
+    padding: 5px;
+
+    .head-left{
+      width: 50px;
+      height: 44px;
+      float: left;
+
+      a{
+        width: 50px;
+        height: 44px;
+        display: block;
+        background: url("../images/icon_bar.png") 128px -3px;
+        background-size: 220px 132px;
+      }
+    }
+
+    h3{
+      padding-left: 50px;
+      padding-right: 50px;
+      text-align: center;
+      font-size: 20px;
+      font-weight: bold;
+      color: #ffffff;
+      line-height: 30px;
+    }
+
+    .head-right{
+      position: absolute;
+      right: 0;
+      top: 3px;
+      padding: 7px;
+
+      img{
+        max-height: 34px;
+        overflow: hidden;
+      }
+    }
+  }
+
+  .footer{
+    display: block;
+    margin-top: 30px;
+    height: 96px;
+
+    .footer-top{
+      height: 34px;
+      width: 100%;
+
+      a{
+        float: left;
+        border: 1px solid #cccccc;
+        width: 33.3%;
+        font-size: 14px;
+        color: #000000;
+        text-align: center;
+      }
+    }
+
+    .footer-bottom{
+      text-align: center;
+
+      a:first-child{
+        color: red;
+      }
+
+      a:nth-child(2){
+        color: #000000;
+      }
+    }
+  }
+}
+
+.search{
+  background-color: #fff;
+  padding: 10px;
+  position: relative;
+
+  #form{
+    padding-right: 90px;
+    height: 30px;
+    line-height:30px;
+  }
+
+  input[type=text]{
+    width: 100%;
+    -webkit-appearance: none;
+    border: none;
+    background: #f1f1f1;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 15px;
+    font-size: 13px;
+  }
+
+  .button-box{
+    position: absolute;
+    text-align: center;
+    top: 8px;
+    right: 10px;
+
+    button{
+      vertical-align: middle;
+      -webkit-appearance: none;
+      width: 63px;
+      background: #ff841d;
+      color: #FFFFFF;
+      border: none;
+      font-size: 16px;
+      border-radius: 15px;
+    }
+  }
+}

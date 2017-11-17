@@ -1,0 +1,96 @@
+.content .nav-lis {
+  height: 38px;
+  background-color: #ebebeb;
+  background: linear-gradient(#ffffff, #ebebeb);
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ccc;
+  line-height: 36px;
+  padding-left: 8px;
+  font-size: 14px;
+}
+.content .nav-lis a:nth-child(4) {
+  float: right;
+  margin-right: 8px;
+  display: block;
+  height: 28px;
+  line-height: 28px;
+  background: linear-gradient(#d7d7d7, #f5f5f5);
+  border-radius: 5px;
+  padding: 0 16px;
+  margin-top: 4px;
+}
+.content .main .product-list {
+  background-color: #ffffff;
+  text-align: left;
+  font-size: 14px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+.content .main .product-list li {
+  padding: 14px 8px;
+  position: relative;
+  height: 130px;
+  border-bottom: 1px solid #cccccc;
+}
+.content .main .product-list li a {
+  display: block;
+}
+.content .main .product-list li a .pic {
+  float: left;
+}
+.content .main .product-list li a .pic img {
+  width: 100px;
+  height: 100px;
+}
+.content .main .product-list li a .info {
+  font-size: 14px;
+  line-height: 24px;
+  padding-left: 120px;
+}
+.content .main .product-list li a .info .title {
+  color: #333333;
+  height: 57px;
+  font-size: 15px;
+  line-height: 15px;
+  text-align: left;
+}
+.content .main .product-list li a .info > span {
+  color: red;
+}
+.content .main .product-list li a .info .other .mall {
+  color: #a1a1a1;
+  font-size: 12px;
+  float: left;
+}
+.content .main .product-list li a .info .other .icon-comment {
+  margin-left: 20px;
+  color: #a1a1a1;
+}
+.content .pages span {
+  text-align: center;
+  float: left;
+  width: 33.3%;
+}
+.content .pages span:nth-child(2) {
+  margin-top: 4px;
+}
+.content .pages span select {
+  width: 96px;
+  height: 36px;
+  margin-bottom: 0!important;
+  padding: 0 1%;
+  border: 1px solid #bababa!important;
+  font-size: 16px;
+}
+.content .pages span select option {
+  text-align: center;
+}
+.content .pages span a {
+  display: block;
+  width: 82px;
+  height: 36px;
+  line-height: 36px;
+  background: linear-gradient(#f1f1f1, #d4d4d4);
+  border-radius: 5px;
+  margin: 5px auto;
+}

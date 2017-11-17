@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>慢慢买-首页</title>
+    <link rel="stylesheet" href="lib/mui/css/mui.css">
+    <link rel="stylesheet" href="lib/fa/css/font-awesome.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<div class="container">
+    <div class="head mui-clearfix">
+        <div class="head-left">
+            <a href="index.html">
+                <img src="images/header_logo.png" alt="">
+            </a>
+        </div>
+        <div class="head-right">
+            <img src="images/header_app.png" alt="">
+        </div>
+    </div>
+    <div class="search">
+        <form action="#" id="form">
+            <div class="mui-input-row">
+                <input type="text" placeholder="请输入商品">
+            </div>
+            <div class="mui-input-row button-box">
+                <button type="button">搜索</button>
+            </div>
+        </form>
+    </div>
+    <div class="nav">
+        <ul class="mui-clearfix nav-content">
+
+        </ul>
+    </div>
+    <div class="recommend mui-clearfix">
+        <span>超级推荐</span>
+        <img src="http://www.zuyushop.com/wap/images/more.png" alt="" width="20" height="20">
+    </div>
+    <div class="main">
+        <div class="product-list">
+            <ul class="mui-clearfix products">
+
+            </ul>
+        </div>
+    </div>
+    <div class="more-bar">
+        <a href="moneyctrl.html" class="mui-btn mui-btn-primary mui-block">更多优惠信息>></a>
+    </div>
+    <div class="brand">
+        <span>品牌排行</span>
+        <img src="http://www.zuyushop.com/wap/images/more.png" alt="" width="20" height="20">
+    </div>
+    <div class="footer">
+        <div class="footer-top">
+            <a href="login.html">登录</a>
+            <a href="register.html">注册</a>
+            <a href="javascript:;" class="back">
+                <img src="http://www.zuyushop.com/wap/images/top.jpg" alt="" width="15" height="15">
+                返回顶部
+            </a>
+        </div>
+        <div class="footer-bottom">
+            <p>
+                <a href="javascript:;">手机APP下载</a>
+                <a href="index.html">慢慢买手机版</a>
+                --掌上比价平台
+            </p>
+            <p>m.manmanbuy.com</p>
+        </div>
+    </div>
+</div>
+<script type="text/html" id="tpl">
+    {{each result v i}}
+    <li>
+        <a href="{{v.titlehref}}">
+            {{#v.img}}
+            <p>{{v.name}}</p>
+        </a>
+    </li>
+    {{/each}}
+</script>
+
+<script type="text/html" id="tpl2">
+    {{each result v i}}
+    <li>
+        <a href="detailproduct.html?productid={{v.productId}}" data-info="{{v.productInfo}}"  data-info2="{{v.productInfo2}}" >
+            <div class="pic">
+               {{#v.productImg2}}
+            </div>
+            <div class="info">
+                <div class="title mui-ellipsis-2">
+                    {{v.productName}}
+                    <span>{{v.productPinkage}}</span>
+                </div>
+                <div class="other mui-clearfix">
+                    <span class="mall">{{v.productFrom}}| {{v.productTime}}</span>
+                    <i class="icon-comment">{{v.productComCount}}</i>
+                </div>
+            </div>
+        </a>
+    </li>
+    {{/each}}
+
+</script>
+
+<script src="lib/zepto/zepto.min.js"></script>
+<script src="lib/mui/js/mui.js"></script>
+<script src="lib/artTemplate/template-web.js"></script>
+<script src="js/common.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
+

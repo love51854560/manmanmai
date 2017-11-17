@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>各类商品</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="lib/mui/css/mui.css">
+    <link rel="stylesheet" href="lib/fa/css/font-awesome.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/productlist.css">
+</head>
+<body>
+<div class="container">
+    <div class="head mui-clearfix">
+        <div class="head-left">
+            <a href="javascript:history.go(-1);">
+
+            </a>
+        </div>
+        <h3>商品</h3>
+        <div class="head-right">
+            <img src="images/header_app.png" alt="">
+        </div>
+    </div>
+
+    <div class="search">
+        <form action="#" id="form">
+            <div class="mui-input-row">
+                <input type="text" placeholder="请输入商品">
+            </div>
+            <div class="mui-input-row button-box">
+                <button type="button">搜索</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="content">
+        <div class="nav-lis">
+
+        </div>
+
+        <div class="main">
+            <div class="product-list">
+                <ul class="mui-clearfix products">
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-top">
+            <a href="login.html">登录</a>
+            <a href="register.html">注册</a>
+            <a href="javascript:;" class="back">
+                <img src="http://www.zuyushop.com/wap/images/top.jpg" alt="" width="15" height="15">
+                返回顶部
+            </a>
+        </div>
+        <div class="footer-bottom">
+            <p>
+                <a href="javascript:;">手机APP下载</a>
+                <a href="index.html">慢慢买手机版</a>
+                --掌上比价平台
+            </p>
+            <p>m.manmanbuy.com</p>
+        </div>
+    </div>
+</div>
+
+<script type="text/html" id="tpl">
+
+    <a href="index.html">
+        首页 >
+    </a>
+    <a href="category.html">
+        全部分类 >
+    </a>
+    <a href="productlist.html?category={{result[0].category}}&categoryId={{result[0].categoryId}}">
+        {{result[0].category}} >
+    </a>
+    <a href="javascript:;">
+        删选
+    </a>
+
+</script>
+
+<script type="text/html" id="tpl1">
+
+    {{each result v i}}
+    <li>
+        <a href="bijia.html?productid={{v.productId}}&category={{category}}" >
+            <div class="pic">
+                {{#v.productImg}}
+            </div>
+            <div class="info">
+                <div class="title mui-ellipsis-2">
+                    {{v.productName}}
+                </div>
+                <span>{{v.productPrice}}</span>
+                <div class="other mui-clearfix">
+                    <span class="mall">{{v.productQuote}}</span>
+                    <i class="icon-comment">{{v.productCom}}</i>
+                </div>
+            </div>
+        </a>
+    </li>
+    {{/each}}
+
+    <div class="pages mui-clearfix">
+            <span class="front-page">
+                <%if(pageid*1 == 1){%>
+                <a href="javascript:;">上一页</a>
+                <%}else{%>
+                <a href="productlist.html?category={{category}}&categoryId={{categoryId}}&pageid={{+pageid-1}}">上一页</a>
+                <%}%>
+            </span>
+            <span class="total-pages">
+                <select name="pages" id="pages">
+                    <%for(var i=1;i<=+pages;i++){%>
+                    <option value="<%=i%>" {{i==pageid?'selected':''}}><%=i+"/"+pages%></option>
+                    <%}%>
+                </select>
+            </span>
+            <span class="next-page">
+                <%if(pageid*1 == pages*1){%>
+                <a href="javascript:;">下一页</a>
+                <%}else{%>
+                <a href="productlist.html?category={{category}}&categoryId={{categoryId}}&pageid={{+pageid+1}}">下一页</a>
+                <%}%>
+            </span>
+    </div>
+
+</script>
+
+
+<script src="lib/zepto/zepto.min.js"></script>
+<script src="lib/mui/js/mui.js"></script>
+<script src="lib/artTemplate/template-web.js"></script>
+<script src="js/common.js"></script>
+<script src="js/productlist.js"></script>
+</body>
+</html>
+

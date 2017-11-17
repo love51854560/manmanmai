@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>商品详情</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="lib/mui/css/mui.css">
+    <link rel="stylesheet" href="lib/fa/css/font-awesome.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/bijia.css">
+</head>
+<body>
+<div class="container">
+    <div class="head mui-clearfix">
+        <div class="head-left">
+            <a href="javascript:history.go(-1);">
+
+            </a>
+        </div>
+        <h3>商品</h3>
+        <div class="head-right">
+            <img src="images/header_app.png" alt="">
+        </div>
+    </div>
+
+    <div class="search">
+        <form action="#" id="form">
+            <div class="mui-input-row">
+                <input type="text" placeholder="请输入商品">
+            </div>
+            <div class="mui-input-row button-box">
+                <button type="button">搜索</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="content">
+
+        <div class="nav-lis">
+
+        </div>
+
+        <div class="product-pic">
+
+        </div>
+
+        <div class="jd-buy">
+
+        </div>
+
+        <div class="note">
+            <p>
+                * 实际价格以各网站列出的实时售价为准，我们提供的价格可能有数小时至数日的延迟。
+            </p>
+        </div>
+
+
+
+    </div>
+
+    <div class="comments">
+        <h3>网友评价</h3>
+
+        <div class="comment-lis">
+            <ul class="lis">
+
+            </ul>
+        </div>
+    </div>
+
+    <div class="more-comments">
+        <a href="javascript:;">更多评价</a>
+    </div>
+
+    <div class="footer">
+        <div class="footer-top">
+            <a href="login.html">登录</a>
+            <a href="register.html">注册</a>
+            <a href="javascript:;" class="back">
+                <img src="http://www.zuyushop.com/wap/images/top.jpg" alt="" width="15" height="15">
+                返回顶部
+            </a>
+        </div>
+        <div class="footer-bottom">
+            <p>
+                <a href="javascript:;">手机APP下载</a>
+                <a href="index.html">慢慢买手机版</a>
+                --掌上比价平台
+            </p>
+            <p>m.manmanbuy.com</p>
+        </div>
+    </div>
+</div>
+
+<script type="text/html" id="tpl">
+    <h4>{{result[0].productName}}</h4>
+
+    <div class="collect">
+        {{#result[0].productImg}}
+        <a href="javascript:;">
+            <img src="http://www.zuyushop.com/wap/images/sc.jpg" alt="">
+        </a>
+    </div>
+
+    <div class="product-buy mui-clearfix">
+        <ul>
+            <li><a href="">比价购买</a></li>
+            <li><a href="">产品参数</a></li>
+            <li><a href="">评价(2332)</a></li>
+        </ul>
+    </div>
+
+    <div class="price-jd">
+        {{#result[0].bjShop}}
+    </div>
+
+
+</script>
+
+
+<script type="text/html" id="tpl1">
+    {{each result v i}}
+    <li>
+        <p class="user-coms mui-clearfix">
+            <span>{{v.comName}}</span>
+            <span>{{v.comTime}}</span>
+        </p>
+        <p class="mail mui-clearfix">
+            <span>{{v.comFrom}}</span>
+        </p>
+        <p>
+            {{v.comContent}}
+        </p>
+    </li>
+    {{/each}}
+</script>
+
+<script type="text/html" id="tpl2">
+    <a href="index.html">
+        首页 >
+    </a>
+    <a href="productlist.html?category={{category}}&categoryId={{result[0].categoryId}}">
+        {{category}} >
+    </a>
+    <a href="javascript:;">
+        {{proName[0]}}
+    </a>
+    <a href="javascript:;">
+        删选
+    </a>
+</script>
+
+
+
+<script src="lib/zepto/zepto.min.js"></script>
+<script src="lib/mui/js/mui.js"></script>
+<script src="lib/artTemplate/template-web.js"></script>
+<script src="js/common.js"></script>
+<script src="js/bijia.js"></script>
+</body>
+</html>

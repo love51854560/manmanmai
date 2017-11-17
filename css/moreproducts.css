@@ -1,0 +1,75 @@
+.main .product-list {
+  background-color: #ffffff;
+  text-align: left;
+  font-size: 14px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+.main .product-list li {
+  padding: 14px 8px;
+  position: relative;
+  height: 130px;
+  border-bottom: 1px solid #cccccc;
+}
+.main .product-list li a {
+  display: block;
+}
+.main .product-list li a .pic {
+  float: left;
+}
+.main .product-list li a .pic img {
+  width: 100px;
+  height: 100px;
+}
+.main .product-list li a .info {
+  font-size: 14px;
+  line-height: 24px;
+  padding-left: 120px;
+}
+.main .product-list li a .info .title {
+  color: #333333;
+  height: 57px;
+  font-size: 15px;
+  line-height: 15px;
+  text-align: left;
+}
+.main .product-list li a .info .title span {
+  color: red;
+}
+.main .product-list li a .info .other .mall {
+  color: #a1a1a1;
+  font-size: 12px;
+  float: left;
+}
+.main .product-list li a .info .other .icon-comment {
+  float: right;
+  color: #a1a1a1;
+}
+.pages span {
+  text-align: center;
+  float: left;
+  width: 33.3%;
+}
+.pages span:nth-child(2) {
+  margin-top: 4px;
+}
+.pages span select {
+  width: 96px;
+  height: 36px;
+  margin-bottom: 0!important;
+  padding: 0 1%;
+  border: 1px solid #bababa!important;
+  font-size: 16px;
+}
+.pages span select option {
+  text-align: center;
+}
+.pages span a {
+  display: block;
+  width: 82px;
+  height: 36px;
+  line-height: 36px;
+  background: linear-gradient(#f1f1f1, #d4d4d4);
+  border-radius: 5px;
+  margin: 5px auto;
+}

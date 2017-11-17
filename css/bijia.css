@@ -1,0 +1,133 @@
+.nav-lis {
+  height: 38px;
+  background-color: #ebebeb;
+  background: linear-gradient(#ffffff, #ebebeb);
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ccc;
+  line-height: 36px;
+  padding-left: 8px;
+  font-size: 14px;
+}
+.nav-lis a:nth-child(4) {
+  float: right;
+  margin-right: 8px;
+  display: block;
+  height: 28px;
+  line-height: 28px;
+  background: linear-gradient(#d7d7d7, #f5f5f5);
+  border-radius: 5px;
+  padding: 0 16px;
+  margin-top: 4px;
+}
+.content .product-pic h4 {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 17px;
+}
+.content .product-pic .collect {
+  margin-top: 150px;
+  position: relative;
+}
+.content .product-pic .collect > img {
+  display: block;
+  width: 170px;
+  height: 170px;
+  margin: 0 auto;
+}
+.content .product-pic .collect a {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.content .product-pic .collect a img {
+  width: 39px;
+  height: 39px;
+}
+.content .product-pic .price-jd {
+  margin-top: 10px;
+  height: 30px;
+  border-bottom: 1px solid #bbb;
+}
+.content .product-pic .price-jd table {
+  margin-top: 12px;
+}
+.content .product-pic .price-jd table .red {
+  color: red;
+  float: right;
+}
+.content .product-pic .price-jd table td {
+  line-height: 22px;
+}
+.content .product-buy {
+  margin-top: 20px;
+  height: 34px;
+}
+.content .product-buy li {
+  float: left;
+  width: 33.333%;
+  text-align: center;
+  border-top: solid 1px #c14d00;
+  border-bottom: 1px solid #c14d00;
+}
+.content .product-buy li:first-child {
+  background: linear-gradient(#ffa632, #ff9000);
+}
+.content .product-buy li:nth-child(2) {
+  background: linear-gradient(#ffd050, #ffbb00);
+  border-left: solid 1px #c14d00;
+  border-right: solid 1px #c14d00;
+}
+.content .product-buy li:nth-child(3) {
+  background: linear-gradient(#ffd050, #ffbb00);
+}
+.content .product-buy li a {
+  display: block;
+  width: 100%;
+  height: 34px;
+  color: #ffffff;
+  line-height: 34px;
+}
+.content .note {
+  padding: 10px;
+}
+.comments p {
+  padding: 5px;
+}
+.comments h3 {
+  height: 34px;
+  line-height: 34px;
+  text-align: center;
+  background: #dbdbdb;
+  font-size: 14px;
+  border-top: 1px solid #fff;
+  font-weight: normal!important;
+}
+.comments .comment-lis li {
+  border-bottom: 1px #cccccc solid;
+}
+.comments .user-coms span:nth-child(2) {
+  float: right;
+}
+.comments .mail span {
+  float: right;
+}
+.comments p:nth-child(3) {
+  color: #000;
+  line-height: 22px;
+  padding-top: 5px;
+}
+.more-comments {
+  padding: 20px;
+}
+.more-comments a {
+  display: block;
+  height: 32px;
+  background: linear-gradient(#f1f1f1, #d4d4d4);
+  border-bottom: 1px solid #bababa;
+  box-shadow: 0 0 1px #666;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 32px;
+  overflow: hidden;
+}
